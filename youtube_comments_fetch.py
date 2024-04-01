@@ -38,7 +38,7 @@ def fetch_comments(video_id, developer_key):
 
 def main():
     video_id = "XPcfJ48h3yA"
-    developer_key = "AIzaSyB9xuZlVvkEWV8aKvPeE_hzx31MhPKbJPQ"
+    developer_key = "DEVELOPER_KEY"
     comments = fetch_comments(video_id, developer_key)
 
     df = pd.DataFrame(comments, columns=['author', 'updated_at', 'like_count', 'text', 'public'])
